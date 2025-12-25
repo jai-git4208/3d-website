@@ -1,0 +1,117 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+* {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+main {
+  color: white;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+  background: rgba(15, 15, 15, 0.95);
+  grid-column: 2 / span 5;
+  font-size: 40px;
+  padding: 32px;
+  margin-bottom: 350px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 16px;
+  background: rgba(15, 15, 15, 0.95);
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 350px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.left {
+  grid-column: 6 / 12;
+}
+
+/* Projects Section */
+.projects-section {
+  grid-column: 2 / 12;
+  padding: 32px;
+}
+
+.projects-section h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.project-card {
+  background: rgba(30, 30, 30, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(50, 50, 50, 0.95);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin: 0 0 12px 0;
+  color: #ffffff;
+}
+
+.project-card p {
+  font-size: 14px;
+  margin: 0 0 16px 0;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.project-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.project-meta .language {
+  background: rgba(88, 166, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #ffffff;
+}
